@@ -31,6 +31,7 @@ export default $config({
       handler: "src/index.handler",
       url: {
         cors: {
+          allowOrigins: [`https://${DOMAIN_NAME}`],
           maxAge: "1 day",
         },
       },
